@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "231839674130",
+    "firebase_url": "https://recipesgp-default-rtdb.firebaseio.com",
+    "project_id": "recipesgp",
+    "storage_bucket": "recipesgp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231839674130:android:0e1edc3f748538bf4a8dcb",
+        "android_client_info": {
+          "package_name": "com.example.recetadecomida"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231839674130-4bmvmsk2kkgs6uoils8pgfoee1um4766.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVUomABrTbEtj2BoUMuLgfNnkASa32WwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "231839674130-4bmvmsk2kkgs6uoils8pgfoee1um4766.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

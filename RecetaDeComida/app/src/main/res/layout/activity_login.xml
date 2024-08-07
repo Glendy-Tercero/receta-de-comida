@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_grey"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/TxtTitulo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="38dp"
+        android:fontFamily="@font/yesteryear"
+        android:text="Recipes"
+        android:textColor="@color/dark_purple"
+        android:textSize="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/BtnGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/white_grey"
+        android:src="@mipmap/google_x80"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TxtGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/caveat_brush"
+        android:text="Google"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnGoogle" />
+
+    <RelativeLayout
+        android:id="@+id/LayoutLogin"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtTitulo1">
+
+        <TextView
+            android:id="@+id/TxtTituloLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageLogo1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/caveat_brush"
+            android:gravity="center"
+            android:text="Log In"
+            android:textColor="@color/purple"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ImageLogo1"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/EdTxtEmailLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TxtTituloLogin"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/ubuntu"
+            android:hint="E-mail"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/dark_purple"
+            android:textColorHighlight="@color/sky_blue"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@color/black" />
+
+        <EditText
+            android:id="@+id/EdTxtPassLog"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EdTxtEmailLog"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/ubuntu"
+            android:hint="••••••••"
+            android:inputType="textPassword"
+            android:textColor="@color/dark_purple"
+            android:textColorHighlight="@color/sky_blue"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@color/black" />
+
+        <ImageButton
+            android:id="@+id/BtnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TxtRegister"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@mipmap/agregar_usuario_x100" />
+
+        <TextView
+            android:id="@+id/TxtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="22dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/caveat_brush"
+            android:text="Register"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/light_purple"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="SIGN IN"
+            android:textColor="@color/sky_blue" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/LayoutRegister"
+        android:layout_width="0dp"
+        android:layout_height="550dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/background_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.48"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TxtTitulo1">
+
+        <TextView
+            android:id="@+id/TxtMyRecipes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ImageLogo2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:fontFamily="@font/caveat_brush"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/purple"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/ImageLogo2"
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@drawable/logo" />
+
+        <EditText
+            android:id="@+id/EdTxtEmailReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TxtMyRecipes"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/dark_purple"
+            android:textColorHighlight="@color/sky_blue"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@color/black" />
+
+        <EditText
+            android:id="@+id/EdTxtPassReg"
+            android:layout_width="338dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/EdTxtEmailReg"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="10dp"
+            android:backgroundTint="#000000"
+            android:ems="10"
+            android:fontFamily="@font/ubuntu"
+            android:hint="Create a password"
+            android:inputType="text"
+            android:textColor="@color/dark_purple"
+            android:textColorHighlight="@color/sky_blue"
+            android:textColorHint="@color/grey"
+            android:textCursorDrawable="@color/black" />
+
+        <ImageButton
+            android:id="@+id/BtnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/TxtLogin"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="#FFFFFF"
+            app:srcCompat="@mipmap/usuario_x100" />
+
+        <TextView
+            android:id="@+id/TxtLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/caveat_brush"
+            android:text="Log In"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/BtnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/light_purple"
+            android:fontFamily="@font/ubuntu_bold"
+            android:text="CREATE"
+            android:textColor="@color/sky_blue" />
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
